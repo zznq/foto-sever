@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  group_id: 1
+  date_uploaded: 2013-03-28 16:32:37
+  image: 
+
+two:
+  group_id: 1
+  date_uploaded: 2013-03-28 16:32:37
+  image: 

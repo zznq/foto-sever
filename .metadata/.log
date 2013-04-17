@@ -1,0 +1,12 @@
+!SESSION 2013-04-04 23:11:03.016 -----------------------------------------------
+eclipse.buildId=3.3.2.201302081546
+java.version=1.7.0_09-icedtea
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2013-04-04 23:11:25.164
+!MESSAGE No repository found at file:/home/zznq/Downloads/Aptana_Studio_3/configuration/org.eclipse.osgi/bundles/205/data/listener_1925729951/.
+
+!ENTRY org.eclipse.equinox.p2.metadata.repository 4 1000 2013-04-04 23:11:25.167
+!MESSAGE No repository found at file:/home/zznq/Downloads/Aptana_Studio_3/.eclipseextension.
