@@ -27,7 +27,7 @@ class PhotosController < ApplicationController
     @photo = Photo.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html #new.html.erb
       format.json { render json: @photo }
     end
   end
@@ -37,6 +37,10 @@ class PhotosController < ApplicationController
     @photo = Photo.find(params[:id])
   end
 
+
+# Example of curl command - Run in the dir that the image is run?
+# curl http://localhost:3000/photos -F photo[group_id]=11 -F "filename=google.jpg;image/jpg" -F "photo[image]=@google.jpg" -F "photo[date_uploaded(1i)]"="2013" -F "photo[date_uploaded(2i)]"="4" -F "photo[date_uploaded(3i)]"="18" -F "photo[date_uploaded(4i)]"="07" -F "photo[date_uploaded(5i)]"="06"
+#
   # POST /photos
   # POST /photos.json
   def create

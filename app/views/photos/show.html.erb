@@ -12,7 +12,7 @@
 
 <p>
   <b>Image:</b>
-  <%= @photo.image %>
+  <a href="<%= @photo.image.url %>"><%= image_tag @photo.image.url(:thumb) %><a/>
 </p>
 
 
