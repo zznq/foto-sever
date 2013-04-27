@@ -46,11 +46,10 @@ class PhotosController < ApplicationController
   def create
     @photo = Photo.new(params[:photo])
 
-    #sleep(2.seconds);
+    #our upload util doesn't handle redirects very well
     respond_to do |format|
-
       if @photo.save
-        format.html { redirect_to @photo, notice: 'Photo was successfully created.' }
+        format.html { render action: "new", notice: 'Photo was successfully created.' }
         format.json { render json: @photo, status: :created, location: @photo }
       else
         format.html { render action: "new" }
