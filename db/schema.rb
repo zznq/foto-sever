@@ -15,13 +15,6 @@ ActiveRecord::Schema.define(:version => 20130418060152) do
 
   create_table "photos", :force => true do |t|
     t.integer  "group_id"
-    t.datetime "date_uploaded"
-    t.string   "content_type"
-    t.string   "filename"
-    t.string   "thumbnail"
-    t.integer  "size"
-    t.integer  "height"
-    t.integer  "width"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
     t.string   "image_file_name"

@@ -46,7 +46,9 @@ class PhotosController < ApplicationController
   def create
     @photo = Photo.new(params[:photo])
 
+    #sleep(2.seconds);
     respond_to do |format|
+
       if @photo.save
         format.html { redirect_to @photo, notice: 'Photo was successfully created.' }
         format.json { render json: @photo, status: :created, location: @photo }
